@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+  body{
+    background-color:rgb(135, 170, 235);
+    font-family: arial;
+
+  }
+  h1{
+    text-align: center;
+  }
+ 
+  input[type=text]:focus {
+  border: 3px solid #555;
+}
+div.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+}
+form{
+  text-align: center;
+}
+
+  
+</style>
+
+<body>
+
+  <img src="h9.avif" alt="logo">
+  <div class="container">
+  <h1>Welcome to Online Book Store</h1>
+  <hr>
+
+  </div>
+  <h1>Enter Personal Details</h1>
+  
+  <div class="container">
+  <form action="confirm.html" method="POST"> 
+    
+    Name:<input type="text" name="name" placeholder="Enter name.." /><br><br>
+   
+    Email address:<input type="text" name="email" placeholder="Enter Email Address.." /><br><br>
+    Full Residential Address:<textarea type="text" name="address" rows="2" cols="40" placeholder="Enter Address.."></textarea><br><br>
+    Phone Number:<input type="Number" name="phone no" placeholder="Enter phone number.." /><br><br>
+    Select Quantity:<select name="quan">
+      <option>Select quantity</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select><br><br>
+    Pin code:<input type="text" name="code" placeholder="Enter pin code.." /><br><br>
+    Select Payment Mode:<input type="radio" name="mode" value="cash">Cash On Delivery
+    <input type="radio" name="mode" value="online">Online<br><br>
+    Select State:<select name="sel">
+      <option>Select state</option>
+      <option>Maharashtra</option>
+      <option>Goa</option>
+      <option>Karnataka</option>
+      <option>Andhra Pradesh</option>
+      <option>Tamil Nadu</option>
+      <option>Punjab</option>
+      <option>Delhi</option>
+      <option>Rajasthan</option>
+      <option>West Bengal</option>
+    </select><br><br>
+    <input type="submit" name="submit" value="Confirm order" />
+
+ 
+
+  </form>
+</div>
+
+</body>
+</html>
+     
